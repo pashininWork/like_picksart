@@ -1,16 +1,20 @@
-# like_picsart
+<h1><p style="text-align: center;">Like Picksart</p></h1>
+<h3>Flutter app for Android and iOS was inspired by <a href = "https://picsart.com">Picksart</a>🙃</h3>
 
-A new Flutter project.
+<h1><p style="text-align: center;">Technology Stack</p></h1>
 
-## Getting Started
+|                                                                                     |                                                                                                                   |
+| ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------- |
+| Architecture                         | BLoC Architecture with <a href="https://pub.dev/packages/elementary">Elementary</a>
+| State manager               | <a href="https://pub.dev/packages/provider">Provider</a>, <a href="https://pub.dev/packages/elementary">Elementary</a>                  |
+| Localization | <a href="https://docs.flutter.dev/ui/accessibility-and-internationalization/internationalization">l10n</a>      |
+| Navigation         | <a href="https://pub.dev/packages/auto_route">auto_route</a>               |
+| Image editing         | <a href="https://pub.dev/packages/bitmap">bitmap</a>             |
+| Getting image from Gallery/Camera       | <a href = "https://pub.dev/packages/image_picker">image_picker</a>            |
+<h1><p style="text-align: center;">Examples</p></h1>
+<img width="200" height="400"  src="static/example0.png">
+<img width="200" height="400"  src="static/example1.png">
+<img width="200" height="400"  src="static/example2.png">
+<img width="200" height="400"  src="static/example3.png">
+<img width="200" height="400"  src="static/example4.png">
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
