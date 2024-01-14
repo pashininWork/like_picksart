@@ -22,46 +22,43 @@ class EditorScreen extends ElementaryWidget<EditorWM> {
 
   @override
   Widget build(EditorWM wm) {
-    return SafeArea(
-      child: Scaffold(
-        appBar: AppBar(
-          title: ListenableBuilder(
-              listenable: wm.imageNotifier,
-              builder: (_, __) {
-                return Row(
-                  children: [
-                    IconButton(
-                      onPressed: wm.haveChanges ? wm.undoLastChange : null,
-                      icon: const Icon(Icons.undo),
-                    ),
-                    IconButton(
-                      onPressed: wm.lastRemovedChange != null
-                          ? wm.redoLastChange
-                          : null,
-                      icon: const Icon(Icons.redo),
-                    ),
-                  ],
-                );
-              }),
-          actions: [
-            TextButton(
-              onPressed: wm.nextButtonOnTap,
-              child: Text(wm.locale.next),
-            ),
-          ],
-        ),
-        body: ListenableBuilder(
-          listenable: wm.imageNotifier,
-          builder: (_, __) => InteractiveViewer(
-            child: Center(
-              child: Image.memory(
-                wm.image.buildHeaded(),
-              ),
+    return Scaffold(
+      appBar: AppBar(
+        title: ListenableBuilder(
+            listenable: wm.imageNotifier,
+            builder: (_, __) {
+              return Row(
+                children: [
+                  IconButton(
+                    onPressed: wm.haveChanges ? wm.undoLastChange : null,
+                    icon: const Icon(Icons.undo),
+                  ),
+                  IconButton(
+                    onPressed:
+                        wm.lastRemovedChange != null ? wm.redoLastChange : null,
+                    icon: const Icon(Icons.redo),
+                  ),
+                ],
+              );
+            }),
+        actions: [
+          TextButton(
+            onPressed: wm.nextButtonOnTap,
+            child: Text(wm.locale.next),
+          ),
+        ],
+      ),
+      body: ListenableBuilder(
+        listenable: wm.imageNotifier,
+        builder: (_, __) => InteractiveViewer(
+          child: Center(
+            child: Image.memory(
+              wm.image.buildHeaded(),
             ),
           ),
         ),
-        bottomNavigationBar: EditorNavBar(editorWM: wm),
       ),
+      bottomNavigationBar: EditorNavBar(editorWM: wm),
     );
   }
 }
