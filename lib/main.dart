@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:like_picsart/core/repository/storage_repo.dart';
 import 'package:like_picsart/core/router/app_router.dart';
+import 'package:like_picsart/core/utils/theme/theme.dart';
 import 'package:like_picsart/generated/localization/app_localizations.dart';
 import 'package:provider/provider.dart';
 
@@ -20,6 +21,7 @@ class MyApp extends StatelessWidget {
     return Provider<IStorageRepository>(
       create: (context) => StorageRepository(),
       child: MaterialApp.router(
+        theme: getLightTheme(),
         routerConfig: _router.config(),
         supportedLocales: AppLocalizations.supportedLocales,
         localizationsDelegates: const [

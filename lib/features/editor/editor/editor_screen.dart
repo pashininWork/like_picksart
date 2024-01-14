@@ -25,7 +25,6 @@ class EditorScreen extends ElementaryWidget<EditorWM> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          toolbarHeight: 60,
           title: ListenableBuilder(
               listenable: wm.imageNotifier,
               builder: (_, __) {
@@ -50,7 +49,6 @@ class EditorScreen extends ElementaryWidget<EditorWM> {
               child: Text(wm.locale.next),
             ),
           ],
-          backgroundColor: Colors.purple[100],
         ),
         body: ListenableBuilder(
           listenable: wm.imageNotifier,

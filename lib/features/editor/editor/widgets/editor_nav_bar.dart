@@ -13,8 +13,6 @@ class EditorNavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BottomAppBar(
-      height: 60,
-      color: Colors.purple[100],
       child: Row(children: [
         IconButton(
           onPressed: editorWM.rotateImageCounterClockWise,

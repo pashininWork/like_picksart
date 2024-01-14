@@ -35,18 +35,22 @@ class GalleryScreen extends ElementaryWidget<GalleryWM> {
         ),
         builder: (_, images) => Padding(
           padding: const EdgeInsets.all(8.0),
-          child: Wrap(
-            spacing: 10,
-            runSpacing: 15,
-            children: [
-              GalleryEmptyItem(onTap: wm.emptyItemOnTap),
-              ...images!
-                  .map((path) => GalleryImageItem(
+          child: SingleChildScrollView(
+            child: Wrap(
+              spacing: 10,
+              runSpacing: 15,
+              children: [
+                GalleryEmptyItem(onTap: wm.emptyItemOnTap),
+                ...images!
+                    .map(
+                      (path) => GalleryImageItem(
                         image: File(path),
                         onTap: wm.imageItemOnTap,
-                      ))
-                  .toList()
-            ],
+                      ),
+                    )
+                    .toList()
+              ],
+            ),
           ),
         ),
       ),
