@@ -25,11 +25,12 @@
             <td style="text-align: center">
                 <img width="200" height="400"  src="static/example6.png">
             </td>
-        </tr>
-        <tr>
-            <td style="text-align: center">
+                <td style="text-align: center">
                 <img width="200" height="400"  src="static/example0.png">
             </td>
+        </tr>
+        <tr>
+     
             <td style="text-align: center">
                 <img width="200" height="400"  src="static/example1.png">
             </td>
