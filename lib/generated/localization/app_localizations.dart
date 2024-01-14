@@ -91,11 +91,77 @@ abstract class AppLocalizations {
     Locale('en')
   ];
 
-  /// No description provided for @hello.
+  /// No description provided for @gallery.
   ///
   /// In en, this message translates to:
-  /// **'Hello'**
-  String get hello;
+  /// **'Gallery'**
+  String get gallery;
+
+  /// No description provided for @camera.
+  ///
+  /// In en, this message translates to:
+  /// **'Camera'**
+  String get camera;
+
+  /// No description provided for @cancel.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get cancel;
+
+  /// No description provided for @ok.
+  ///
+  /// In en, this message translates to:
+  /// **'Ok'**
+  String get ok;
+
+  /// No description provided for @galeryOrCamera.
+  ///
+  /// In en, this message translates to:
+  /// **'Gallery or Camera'**
+  String get galeryOrCamera;
+
+  /// No description provided for @brightness.
+  ///
+  /// In en, this message translates to:
+  /// **'Brightness'**
+  String get brightness;
+
+  /// No description provided for @contrast.
+  ///
+  /// In en, this message translates to:
+  /// **'Contrast'**
+  String get contrast;
+
+  /// No description provided for @save.
+  ///
+  /// In en, this message translates to:
+  /// **'Save'**
+  String get save;
+
+  /// No description provided for @beforeAfter.
+  ///
+  /// In en, this message translates to:
+  /// **'Before After'**
+  String get beforeAfter;
+
+  /// No description provided for @before.
+  ///
+  /// In en, this message translates to:
+  /// **'Before'**
+  String get before;
+
+  /// No description provided for @after.
+  ///
+  /// In en, this message translates to:
+  /// **'After'**
+  String get after;
+
+  /// No description provided for @next.
+  ///
+  /// In en, this message translates to:
+  /// **'Next'**
+  String get next;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

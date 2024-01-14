@@ -1,3 +1,14 @@
 {
-    "hello": "Hello"
+    "gallery": "Gallery",
+    "camera": "Camera",
+    "cancel": "Cancel",
+    "ok": "Ok",
+    "galeryOrCamera": "Gallery or Camera",
+    "brightness": "Brightness",
+    "contrast": "Contrast",
+    "save": "Save",
+    "beforeAfter": "Before After",
+    "before": "Before",
+    "after": "After",
+    "next": "Next"
 }
